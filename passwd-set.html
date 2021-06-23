@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>天狮大中华</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="content1">
+				<a href="index.html"><img class="sign-img1" src="img/login.jpg"></a>
+				<div class="signbox">
+					<div class="signIn-box account">
+						<img src="img/pwd.png" class="sign-icon">
+						<input type="text" placeholder="请输入新密码" id="sign-phone" class="sign-inp phone">
+						<span class="dele"></span>
+					</div>
+					<div class="signIn-box passW">
+						<img src="img/pwd.png" class="sign-icon">
+						<input type="password" placeholder="请再次输入" id="sign-pword" class="sign-inp pword">
+					</div>
+					
+					<div class="sign-btn1">
+						<input type="button" value="保存" class="signbtn radius5" id="sign-btn1">
+					</div>
+					<input type="text" id="sign-yanzheng" class="sign-inp yanzheng" hidden="hidden" value="0">
+					<!--<div class="weixin-login">
+						<span class="other-remind">其他登录方式</span>
+						<div id="towxlogin">
+							<span class="wx-img" id="wxlogin" style="display:none"></span>
+							<span class="dx-img" id="tomlogin" style=""></span>
+							<p class="wx-word">微信登录</p>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<div style="display:none;" class="gotobtn" id="goTopBtn"><img border="0" src="img/goToTop.png"></div>
+		</div>
+		<script src="js/tmpl/login.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(document).on('click', '.send-out-bg', function() {
+					shopdz_alert("密码修改成功，请记住您的新密码！",2,function() {
+			window.location.href = "login.html"
+		});
+				});
+			})
+		</script>
+	</body>
+
+</html>

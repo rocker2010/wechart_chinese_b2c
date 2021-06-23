@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>天狮大中华</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/tmpl/register.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content1">
+				<a href="index.html"><img class="sign-img1" src="img/login.jpg"></a>
+				<div class="signbox">
+					<div class="signIn-box account">
+						<img src="img/accunt.png" class="sign-icon">
+						<input type="text" placeholder="请输入手机号" id="sign-phone" class="sign-inp phone">
+						<span class="dele"></span>
+					</div>
+					<div class="signIn-box passW">
+						<img src="img/pwd2.png" class="sign-icon">
+						<input type="password" placeholder="请输入验证码" id="sign-pword" class="sign-inp pword" style="width: 52%;margin-right: .5rem;"><a href="javascript:" class="integral-detailbtn radius3 input30" id="yanzhengCode" style=" margin-top: 0.8rem!important; display: inline-block; ">获取验证码</a>
+					</div>
+					
+					<div class="sign-btn1">
+						<input type="button" value="下一步" class="signbtn radius5" id="sign-btn1">
+					</div>
+					<input type="text" id="sign-yanzheng" class="sign-inp yanzheng" hidden="hidden" value="0">
+					<!--<div class="weixin-login">
+						<span class="other-remind">其他登录方式</span>
+						<div id="towxlogin">
+							<span class="wx-img" id="wxlogin" style="display:none"></span>
+							<span class="dx-img" id="tomlogin" style=""></span>
+							<p class="wx-word">微信登录</p>
+						</div>
+					</div>-->
+				</div>
+			</div>
+			<div style="display:none;" class="gotobtn" id="goTopBtn"><img border="0" src="img/goToTop.png"></div>
+		</div>
+		<script src="js/tmpl/login.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(document).on('click', '.send-out-bg', function() {
+					window.location = "passwd-set.html";
+				});
+			})
+		</script>
+	</body>
+
+</html>

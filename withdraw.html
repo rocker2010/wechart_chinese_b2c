@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>天狮大中华</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="header_has_nav">
+			<div class="header-box">
+				<div class="index-header goback-header"><img src="img/back.png" class="back-icon">
+					<h1 class="head-tit" id="head_tit">卓越卡提现</h1>
+					<a href="javascript:;" class="head-cartimg"><span class="head-more head-moreimg head-moreimgred"></span></a>
+				</div>
+			</div>
+			<ul class="nav-list radius3" style="display: none;">
+				<li>
+					<a href="index.html" class="navf-page">首页</a>
+				</li>
+				<li>
+					<a href="basket.html" class="navbasket">购物车<span class="basket-have" style="display: inline-block;">1</span></a>
+				</li>
+				<li>
+					<a href="member.html" class="navmember">个人中心</a>
+				</li>
+			</ul>
+		</div>
+		<div id="" class="wrapper">
+			<div class="content">
+				<div class="wrapper" id="wrapper">
+					<style>
+						.withdraw-list li span.list-span1 {
+							width: 35%;
+						}
+						
+						.withdraw-list .withdraw-right {
+							width: 62%;
+						}
+					</style>
+					<div id="withdraw_home">
+						<div id="withdraw_content">
+							<div class="totle-box">
+								<div class="spread-top totle-top">
+									<h1 class="spread-num">2003.04</h1>
+									<p class="spread-remind">可提现金额</p>
+									<a href="tixianijilu.html"><img src="img/jt-r.png" alt="" class="spread-jtR"></a>
+								</div>
+							</div>
+							<ul class="detail-list2 withdraw-list">
+								<li>
+									<div class="signIn-box account">
+										<span class="list-span1 boxsizing left">本次提现</span>
+										<input type="number" placeholder="最少1元，最多1000元" class="list-inp1 input-box withdraw-right" id="frozen_price" name="frozen_price" value="">
+									</div>
+								</li>
+								<li>
+									<div class="signIn-box account">
+										<span class="list-span1 boxsizing left">手续费</span>
+										￥ 10.00
+									</div>
+								</li>
+								<li>
+									<div class="signIn-box account" style="border: none;">
+										<span class="list-span1 boxsizing left">提现至银行卡</span> 工商银行 尾号1234
+									</div>
+								</li>
+							</ul>
+							<div class="address-default">
+								请先设置银行卡，或联系客服专员！<b class="font-red">400-123-4567</b>
+							</div>
+							<div class="new-build  foot-btn foot-fixed" id="withdraw_home_submit">提现</div>
+						</div>
+					</div>
+					<div class="alertbox tixian-sure none">
+						<div class="alert-p2">
+							<h2>确认提现吗？</h2>当前账户：60001757<br> 申请提现：123.00 元<br>手续费：1.00 元。<br>实际提现：<b>122.00</b> 元。
+						</div>
+						<div class="btnbox1">
+							<span class="cancelbtn1">取消</span>
+							<span class="surebtn1">确定</span>
+						</div>
+					</div>
+					<div class="cover"></div>
+					<div style="display:none;" class="gotobtn" id="goTopBtn"><img border="0" src="img/goToTop.png"></div>
+				</div>
+			</div>
+
+		</div>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#withdraw_home_submit').unbind().bind('click', function() {
+					$('.cover').css('display', 'block');
+					$('.tixian-sure').css('display', 'block');
+					$('.surebtn1').click(function() {
+						$('.cover').css('display', 'none');
+						$('.tixian-sure').css('display', 'none');
+						window.location.href='withdraw-submit.html';
+					});
+				});
+				/* 取消退出 */
+				$('.cancelbtn1').bind('click', function() {
+					$('.cover').css('display', 'none');
+					$('.tixian-sure').css('display', 'none');
+				});
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>天狮大中华</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="header_has_nav">
+			<div class="header-box">
+				<div class="index-header goback-header"><img src="img/back.png" class="back-icon">
+					<h1 class="head-tit" id="head_tit">卓越卡充值</h1>
+					<a href="javascript:;" class="head-cartimg"><span class="head-more head-moreimg head-moreimgred"></span></a>
+				</div>
+			</div>
+			<ul class="nav-list radius3" style="display: none;">
+				<li>
+					<a href="index.html" class="navf-page">首页</a>
+				</li>
+				<li>
+					<a href="basket.html" class="navbasket">购物车<span class="basket-have" style="display: inline-block;">1</span></a>
+				</li>
+				<li>
+					<a href="member.html" class="navmember">个人中心</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wrapper" id="wrapper">
+			<div class="content">
+				<div id="generalize">
+					<div class="totle-box">
+						<div class="spread-top totle-top">
+							<h1 class="spread-num">0.00</h1>
+							<p class="spread-remind">卓越卡余额</p>
+							<a href="chongzhijilu.html"><img src="img/jt-r.png" alt="" class="spread-jtR"></a>
+						</div>
+						<div class="reward-box">
+							<h2 class="reward-tit"><p class="reward-titp left">请选择充值金额</p></h2>
+							<ul class="chongzhiList">
+								<li class="sel"><span>￥500</span></li>
+								<li><span>￥1000</span></li>
+								<li><span>￥2000</span></li>
+								<li><span>￥5000</span></li>
+								<li><span>￥10000</span></li>
+								<li><input type="text" value="" placeholder="其他"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="totle-box">
+						<div class="order-detail" style="margin-bottom: 0;">
+							<ul class="order-ul" style="line-height:initial;">
+								<li>
+									<p class="left"><img src="img/zhifubao.png" style="height: 3rem; margin-top: 0.5rem;"></p>
+									<div class="check-box right" style="margin: 1rem">
+										<input type="checkbox" class="input_check" id="checked1"><label for="checked1"></label>
+									</div>
+								</li>
+								<li>
+									<p class="left"><img src="img/zhifuimg2.png" style="height: 3rem;margin-top: 0.5rem;"></p>
+									<div class="check-box right" style="margin: 1rem">
+										<input type="checkbox" class="input_check" id="checked1"><label for="checked1"></label>
+									</div>
+								</li>
+								<li>
+									<p class="left"><img src="img/timg.jpg" style="height: 3rem; margin-top: 0.5rem;"></p>
+									<div class="check-box right" style="margin: 1rem">
+										<input type="checkbox" class="input_check" id="checked1"><label for="checked1"></label>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+					<div class="address-default">
+						充值中，如果遇到问题，请联系客服！<b class="font-red">400-123-4567</b>
+					</div>
+				</div>
+				<a class="new-build foot-fixed foot-btn" id="chongzhi_submit">立即充值</a>
+				<div class="alertbox chongzhi-sure none">
+					<div class="alert-p2">
+						<h2>确认充值吗？</h2>当前账户：60001757<br> 充值：900.00元<br>手续费：10.00元<br>实际需支付：<b>910.00</b> 元。
+					</div>
+					<div class="btnbox1">
+						<span class="cancelbtn1">取消</span>
+						<span class="surebtn1">确定</span>
+					</div>
+				</div>
+				<div class="cover"></div>
+				<div style="display:none;" class="gotobtn" id="goTopBtn"><img border="0" src="img/goToTop.png"></div>
+			</div>
+			<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+			<script type="text/javascript" src="js/iscroll.js"></script>
+			<script type="text/javascript" src="js/js.js"></script>
+			<script type="text/javascript">
+			$(function() {
+				$('#chongzhi_submit').unbind().bind('click', function() {
+					$('.cover').css('display', 'block');
+					$('.chongzhi-sure').css('display', 'block');
+					$('.surebtn1').click(function() {
+						$('.cover').css('display', 'none');
+						$('.chongzhi-sure').css('display', 'none');
+					});
+				});
+
+				/* 取消退出 */
+				$('.cancelbtn1').bind('click', function() {
+					$('.cover').css('display', 'none');
+					$('.chongzhi-sure').css('display', 'none');
+				});
+			})
+		</script>
+	</body>
+
+</html>

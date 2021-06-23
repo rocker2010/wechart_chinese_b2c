@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>天狮大中华</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="header_has_nav">
+			<div class="header-box">
+				<div class="index-header goback-header"><img src="img/back.png" class="back-icon">
+					<h1 class="head-tit" id="head_tit">顾客注册</h1>
+				</div>
+			</div>
+		</div>
+		<div id="ordersuccess" class="wrapper" style="background: #f7f7f7;"><div class="content">
+			<div class="success-header">
+				<img src="img/orderS-img1.jpg" class="success-img">
+				<h1 class="success-tit">恭喜您成功！</h1>
+				<p class="jump-link"><a href="user-info-commen.html">继续完善</a><a href="index.html">去购物</a></p>
+			</div>
+			<div class="detail-box1">
+				<p class="details-p1"><strong>您现在可以使用以下任意一种方式，登录：</strong></p>
+				<p class="details-p1"><span>•天狮大中华网站</span></p>
+				<p class="details-p1"><span>•天狮大中华手机APP</span></p>
+			</div>
+			<div class="detail-box1">
+				<p class="details-p1"><span>电子邮箱：</span><span>123@1.com</span></p>
+				<p class="details-p1"><span>昵称：</span><span>CUS00001</span></p>
+				<p class="details-p1"><span>手机号：</span><span>13800000001</span></p>
+			</div>
+			
+			<div class="bottom-bg"></div>
+		</div></div>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/tmpl/register.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#nextStp').on('click', function() {
+					$(".register_info_on").css("display", "block")
+					$(".cover").css("display", "block");
+					$('.register_info_on').slideDown('fast');
+				});
+				$(document).on('click', '.cancelbtn2,.cover', function() {
+					$('.register_info_on').slideUp('fast');
+					$(".cover").css("display", "none");
+				});
+				$(document).on('click', '.surebtn2', function() {
+					window.location = "register-sucess.html";
+				});
+			})
+		</script>
+	</body>
+
+</html>

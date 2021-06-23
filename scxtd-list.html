@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>天狮大中华</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script src="js/tmpl/AddSubstract.js"></script>
+		<!--<script src="js/tmpl/basket.js"></script>-->
+		<style>
+			.bg {
+				background-color: #ccc;
+			}
+			.namewh {
+				width: 100%;
+				height: 2rem;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				-o-text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="header_has_nav">
+			<div class="header-box">
+				<div class="index-header goback-header"><img src="img/back.png" class="back-icon">
+					<h1 class="head-tit" id="head_tit">狮城新天地 狮城自选商品</h1>
+					<a href="javascript:;" class="head-cartimg"><span class="head-more head-moreimg head-moreimgred"></span></a>
+				</div>
+			</div>
+			<ul class="nav-list radius3" style="display: none;">
+				<li>
+					<a href="index.html" class="navf-page">首页</a>
+				</li>
+				<li>
+					<a href="basket.html" class="navbasket">购物车<span class="basket-have" style="display: inline-block;">1</span></a>
+				</li>
+				<li>
+					<a href="member.html" class="navmember">个人中心</a>
+				</li>
+			</ul>
+		</div>
+		<div id="shopcart" class="wrapper">
+			<!--header结束-->
+			<!--content开始-->
+			<div class="content" style="background: rgb(247, 247, 247);">
+				<div id="mBox">
+					<i class="iconfont icon-2" id="labaMbox"></i>
+					<i class="iconfont icon-cuowu" id="closeMbox"></i>
+					<m id="mL" class="ell">
+						<a href="news-view.html">这是公告消息，的弥补就看对方尽快地方撒健康。</a>
+						<a href="news-view.html">这是公告消息，的弥补就看对方尽快地方撒健康。</a>
+						<a href="news-view.html">这是公告消息，的弥补就看对方尽快地方撒健康。</a>
+						<a href="news-view.html">这是公告消息，的弥补就看对方尽快地方撒健康。</a>
+						<a href="news-view.html">这是公告消息，的弥补就看对方尽快地方撒健康。</a>
+						<a href="news-view.html">这是公告消息，的弥补就看对方尽快地方撒健康。</a>
+					</m>
+					<m id="mLCopy" class="ell"></m>
+				</div>
+				<div class="head-bg topuser" style=" min-height: initial;">
+					<ul>
+						<li>
+							<p>当前经销商：贾不假</p>
+							<p>卓越卡编号：60001234</p>
+						</li>
+						<li>
+							<p>客服专员姓名：孔乙己</p>
+							<p>卓越卡编号: 60003456</p>
+						</li>
+					</ul>
+				</div>
+				<div class="search-btn2">
+					<input id="search_con" type="text" placeholder="搜索">
+					<span><img src="img/searchbtn.png"></span>
+					<span onclick="toggleLayer('scxtdList')"><img src="img/toggle.png"></span>
+				</div>
+				<div id="scxtdList">
+					<ul class="scxfl"  id="scxtd">
+						<li>
+							<a href="" class="tit">肠道检测</a>
+						</li>
+						<li><span class="selectList" id="select-sure"><a href="javascript:" class="tit">狮城自选商品</a></span></li>
+						<li>
+							<a href="" class="tit">会员升级套组</a>
+						</li>
+						<li>
+							<a href="" class="tit">白金卡会员套组产品</a>
+						</li>
+						<li>
+							<a href="" class="tit">金卡会员套组产品</a>
+						</li>
+						<li>
+							<a href="" class="tit">银卡会员套组产品</a>
+						</li>
+					</ul>
+					<style type="text/css">
+						.selectList:before {
+							right: -1.2rem;
+							border-width: .45rem;
+						}
+					</style>
+					<div class="alertbox select-sure none">
+						<p style="padding: 1rem; font-size: 1.6rem;">
+							<a href="scxtd-list.html">个人护理用品</a>
+						</p>
+						<p style="padding: 1rem; font-size: 1.6rem;">
+							<a href="scxtd-list.html">家居清洁用品</a>
+						</p>
+						<div class="btnbox1"> <span class="cancelbtn1" style="width: 100%;">取消</span></div>
+					</div>
+				</div>
+				<!--购物车商品列表开始-->
+				<ul class="cart-list" style="background: #fff;">
+					<li>
+						<div class="cart-list-l">
+							<div class="check-box">
+								<input type="checkbox" name="id" class="input_check checkid" value="1405" >
+								<label></label>
+							</div>
+						</div>
+						<div class="cart-list-r ">
+							<input type="hidden" name="id" value="100.05">
+							<dl class="cart-list-rl cart-list-dl">
+								<dt class="cart-list-dt posi1"><img src="http://shopdz.shopdz.cn/data/Attach/Common/2016-06-21/57690ee955559.png" class="cart-list-img" style="/* height: 79px; */"><a href="./goods_detail.html?id=92" class="a-none"></a><p class="cart-proprice">
+									¥<span class="sumber"></span>
+								</p></dt>
+								<dd class="cart-list-dd">
+									<h1 class="cart-dd-tit namewh" onclick="window.location.href='./goods_detail.html?id=92'">禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾</h1>
+									<p class="dd-p2">商品编号：22141</p>
+									<p class="dd-p2">积分1:231&nbsp;&nbsp;&nbsp;&nbsp;积分2:231</p>
+									<p class="cart-spec namewh"><span class="goods_price"><b>¥&nbsp;&nbsp;229.00</b></span></p>
+									<div class="size1">
+										<div class="m-selnum jia-jian">
+											<span id="min" class="jian less z-dis" style="border-right: none;">
+													<i class="hx"></i>
+												</span>
+											<div class="textWrap">
+												<input type="number" class="num-input text_box" num="6" value="1">
+											</div>
+											<span id="add" class="more jia">
+													<i class="hx"></i>
+													<i class="sx"></i>
+											</span>
+										</div>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</li>
+					<li>
+						<div class="cart-list-l">
+							<div class="check-box">
+								<input type="checkbox" name="id" class="input_check checkid" value="1405" >
+								<label></label>
+							</div>
+						</div>
+						<div class="cart-list-r ">
+							<input type="hidden" name="id" value="100.05">
+							<dl class="cart-list-rl cart-list-dl">
+								<dt class="cart-list-dt posi1"><img src="http://shopdz.shopdz.cn/data/Attach/Common/2016-06-21/57690ee955559.png" class="cart-list-img" style="/* height: 79px; */"><a href="./goods_detail.html?id=92" class="a-none"></a><p class="cart-proprice">
+									¥<span class="sumber"></span>
+								</p></dt>
+								<dd class="cart-list-dd">
+									<h1 class="cart-dd-tit namewh" onclick="window.location.href='./goods_detail.html?id=92'">禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾</h1>
+									<p class="dd-p2">商品编号：22141</p>
+									<p class="dd-p2">积分1:231&nbsp;&nbsp;&nbsp;&nbsp;积分2:231</p>
+									<p class="cart-spec namewh"><span class="goods_price"><b>¥&nbsp;&nbsp;229.00</b></span></p>
+									<div class="size1">
+										<div class="m-selnum jia-jian">
+											<span id="min" class="jian less z-dis" style="border-right: none;">
+													<i class="hx"></i>
+												</span>
+											<div class="textWrap">
+												<input type="number" class="num-input text_box" num="6" value="1">
+											</div>
+											<span id="add" class="more jia">
+													<i class="hx"></i>
+													<i class="sx"></i>
+											</span>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li>
+						<div class="cart-list-l">
+							<div class="check-box">
+								<input type="checkbox" name="id" class="input_check checkid" value="1405" >
+								<label></label>
+							</div>
+						</div>
+						<div class="cart-list-r ">
+							<input type="hidden" name="id" value="100.05">
+							<dl class="cart-list-rl cart-list-dl">
+								<dt class="cart-list-dt posi1"><img src="http://shopdz.shopdz.cn/data/Attach/Common/2016-06-21/57690ee955559.png" class="cart-list-img" style="/* height: 79px; */"><a href="./goods_detail.html?id=92" class="a-none"></a><p class="cart-proprice">
+
+									¥<span class="sumber"></span>
+
+								</p></dt>
+								<dd class="cart-list-dd">
+									<h1 class="cart-dd-tit namewh" onclick="window.location.href='./goods_detail.html?id=92'">禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾禅心羊毛围巾</h1>
+									<p class="dd-p2">商品编号：22141</p>
+									<p class="dd-p2">积分1:231&nbsp;&nbsp;&nbsp;&nbsp;积分2:231</p>
+									<p class="cart-spec namewh"><span class="goods_price"><b>¥&nbsp;&nbsp;229.00</b></span></p>
+									<div class="size1">
+										<div class="m-selnum jia-jian">
+											<span id="min" class="jian less z-dis" style="border-right: none;">
+													<i class="hx"></i>
+												</span>
+											<div class="textWrap">
+												<input type="number" class="num-input text_box" num="6" value="1">
+											</div>
+											<span id="add" class="more jia">
+													<i class="hx"></i>
+													<i class="sx"></i>
+												</span>
+										</div>
+									</div>
+								</dd>
+							</dl>
+							
+						</div>
+					</li>
+				</ul>
+				<!--foot开始-->
+				<div class="shopcart-foot foot-btn auto foot-fixed">
+					<div class="check-all-box">
+						<div class="check-box foot-float" style="margin:1.25rem 1rem;">
+							<!--<input type="checkbox" class="check-ps"/>
+			    				<span class="check-bg"></span>-->
+							<input type="checkbox" class="input_check" id="check-all"><label for="check-all"></label>
+						</div>
+						<p class="all-remind foot-float">全选</p>
+						<div class="cart-price-all text-right">
+							<p class="text-r" style="padding-right: 1rem;">
+								<span class="yuan1">¥</span>
+								<span id="sumprice" class="price-num1"></span>
+								<!-- <span>00</span> -->
+							</p>
+							<p class="jifen" style="padding-right: 1rem;">102.00 / 0.00 </p>
+						</div>
+					</div>
+					<div class="settlement pointer" id="submit">结算</div>
+				</div>
+				<!--foot结束-->
+				<!--购物车商品列表结束-->
+			</div>
+		</div>
+		<div style="display:none;" class="gotobtn" id="goTopBtn"><img border="0" src="img/goToTop.png"></div>
+		<div class="cover" style="display:none;"></div>
+		<script type="text/javascript">
+		var ajaxdel = true;
+		$(function() {
+				getbasket();
+			/* 狮城自选商品 */
+				$('#scxtd').on('click', '#select-sure', function() {
+					$('.cover').css('display', 'block');
+					$('.select-sure').css('display', 'block');
+				});
+				/* 取消狮城自选商品 */
+				$(document).on('click', '.cancelbtn1,.cover', function() {
+					$('.cover').css('display', 'none');
+					$('.select-sure').css('display', 'none');
+				});
+				
+			//结算事件
+			 $(document).on("click",'#submit',function(){
+				window.location.href = 'settlement.html';
+			})
+            //全选/全不选
+	        $(document).on("click",'#check-all',function () { 
+	        	var ach = $("input[name='id']");
+	            for ( var i = 0; i < ach.length; i++) 
+	            { 
+	            	if($(ach[i]).attr('goodnum')){
+	            		continue;
+	            	}
+	                ach[i].checked=$(this).attr('checked');
+	            }
+	            sumprice()
+	        });
+	        
+	        $(document).on("click",'.checkid',function () {
+	        	if($(this).attr('goodnum')){
+	        		return false;
+	        	}
+	            var flag = true; 
+	            var ach = $('.checkid');
+	            for (var i = 0; i < ach.length; i++) {
+	            	if(!$(ach[i]).attr('checked')){
+	            		flag = false; 
+	            		break;
+	            	}
+	            };
+                $('#check-all').attr('checked', flag); 
+                sumprice()
+	        }); 
+        });
+	 	//调用返回顶部的函数
+	    goTopEx();
+	    mBox();
+
+		</script>
+	</body>
+
+</html>

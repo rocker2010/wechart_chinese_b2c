@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>订单结算</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="header_has_nav">
+			<div class="header-box">
+				<div class="index-header goback-header"><img src="img/back.png" class="back-icon">
+					<h1 class="head-tit" id="head_tit">订单结算</h1>
+					<a href="javascript:;" class="head-cartimg"><span class="head-more head-moreimg head-moreimgred"></span></a>
+				</div>
+			</div>
+			<ul class="nav-list radius3" style="display: none;">
+				<li>
+					<a href="index.html" class="navf-page">首页</a>
+				</li>
+				<li>
+					<a href="basket.html" class="navbasket">购物车<span class="basket-have" style="display: inline-block;">1</span></a>
+				</li>
+				<li>
+					<a href="member.html" class="navmember">个人中心</a>
+				</li>
+			</ul>
+		</div>
+		<div id="order" class="wrapper outer content">
+			<div class="list">
+				<div id="mBox">
+			<i class="iconfont icon-2" id="labaMbox"></i>
+			<i class="iconfont icon-cuowu" id="closeMbox"></i>
+            <m id="mL" class="ell">温馨提示：可以生成自购订单或者代购订单，如您替其他人购买，请在文本框内输入卓越卡号。</m>
+            <m id="mLCopy" class="ell"></m>
+			</div>
+				<ul class="gmfs">
+					<li class="selected">
+						<a href="settlement.html" style="padding-top: 1.5rem;">自己购买</a>
+					</li>
+					<li>
+						<a href="settlement2.html" style="text-align: left;padding-top: 1.5rem;">为他人代购
+							<div class="none">
+								<p>贾政 </p>
+								<p>60007517</p>
+							</div>
+							<div class="jt-r2">
+								<i class="iconfont icon-xiangyoujiantou" style="font-size: 3rem;"></i>
+							</div>
+						</a>
+					</li>
+				</ul>
+				<!--收货信息-->
+				<div class="address-bg"></div>
+				<div class="address-box" id="address">
+					<div class="address-name" id="h_name">
+						<input type="hidden" name="address_id" value="215">
+						<p class="true_name name2">王二</p>
+						<span class="default">默认</span>
+					</div>
+					<div class="address-describe" id="address-describe">
+						<p class="phone1">13752251670</p>
+						<p class="address-word">天津天津市河西区发动机撒了封疆大吏a </p>
+					</div>
+					<div class="jt-r2">
+						<img src="img/jt-r.png" class="address-choice-btn">
+					</div>
+				</div>
+				<!--优惠券-->
+				<!--产品列表-->
+				<div class="proListS">
+					<div class="proListLeft">
+						<ul>
+							<li class="zhe"><img src="img/pro/575790e6c58b9.jpg" /></li>
+							<li><img src="img/pro/575790e6c58b9.jpg" /></li>
+							<li class="zhe"><img src="img/pro/575790e6c58b9.jpg" /></li>
+							<li><img src="img/pro/575790e6c58b9.jpg" /></li>
+							<li class="zhe"><img src="img/pro/575790e6c58b9.jpg" /></li>
+							<li><img src="img/pro/575790e6c58b9.jpg" /></li>
+							<li><img src="img/pro/575790e6c58b9.jpg" /></li>
+							<li><img src="img/pro/575790e6c58b9.jpg" /></li>
+						</ul>
+					</div>
+					<div class="proListRight">
+						<p>共 8 件</p>
+						<p>折扣 3 件</p>
+						<div class="jt-r2">
+							<a href="settlement-list.html"><img src="img/jt-r.png" class="address-choice-btn"></a>
+						</div>
+					</div>
+				</div>
+				<!--结束产品列表-->
+				<div class="coupon border-bot marginB-no">
+					<input type="hidden" name="coupon_id" value="">
+					<p class="left" id="coupon-name">业务周期：</p>
+					<p class="right" style="margin-right:8%;"><span class="right">普通周期 （20170301）</span></p>
+				</div>
+				<div class="coupon border-bot marginB-no">
+					<input type="hidden" name="coupon_id" value="">
+					<p class="left" id="coupon-name">自提发票：</p>
+					<div class="check-box right" style="margin: 1rem">
+						<input type="checkbox" class="input_check" id="checked2"><label for="checked2"></label>
+					</div>
+					<p class="right" style="width: 60%;"><span class="right">普通发票(纸质) 个人  <br><span class="gray-font2" style="font-size: 1.2rem;">每月15日-30日发货分公司自提发票</span></span> </p>
+				</div>
+				<div class="coupon border-bot marginB-no">
+					<input type="hidden" name="coupon_id" value="">
+					<p class="left" id="coupon-name">配送方式：</p>
+					<p class="right" style="margin-right:8%;"><span class="right">快递  ¥10.00</span></p>
+					<div class="jt-r2"><img src="img/jt-r.png"></div>
+				</div>
+				<div class="coupon border-bot marginB-no">
+					<input type="hidden" name="coupon_id" value="">
+					<p class="left" id="coupon-name">支付方式：</p>
+					<p class="right" style="margin-right:8%;"><span class="right">微信支付</span></p>
+					<div class="jt-r2" id="sel_pay"><img src="img/jt-r.png"></div>
+				</div>
+				<div class="coupon">
+					<p class="left">共 8 件商品</p>
+					<p class="right"><b class=" wordred">小计：￥300.00</b>（含运费）</p>
+				</div>
+				<!--合计/运费/优惠-->
+				<div class="order-detail">
+					<ul class="order-ul">
+						<li>
+							<p class="left">可用消费积分&nbsp;300.00</p>
+							<div class="check-box right" style="margin: 1rem">
+								<input type="checkbox" class="input_check" id="checked1"><label for="checked1"></label>
+							</div>
+						</li>
+						<li>
+							<p class="left">可用红包金额&nbsp;140.00元</span>
+							</p>
+							<div class="check-box right" style="margin: 1rem">
+								<input type="checkbox" class="input_check" id="checked2"><label for="checked2"></label>
+							</div>
+						</li>
+						<li>
+							<p class="left">积分2</p>
+							<span id="discount" class="right">270.30</span>
+						</li>
+						<li style="border-bottom: none;">
+							<p class="left">积分3</p>
+							<span id="discount" class="right">120.00</span>
+						</li>
+
+					</ul>
+				</div>
+				<div class="order-foot foot-fixed foot-btn auto" style="width: 100%;">
+					<div class="left order-num" style="width: 75%;">
+						<span style="padding-left: 5%;">需支付：</span><span class="wordred">¥&nbsp;</span><span id="realprice" class="wordred">1459.00</span>
+					</div>
+					<div id="payment" class="right settlement pointer">确认订单</div>
+				</div>
+			</div>
+			<!--收货地址列表开始-->
+			<div class="address-choice" style="background: #f7f7f7;">
+				<div class="address-bg"></div>
+				<ul class="choice-ul2" id="address_list">
+					<!--我自己的地址-->
+					<li class="liclass_215 border-redleft">
+						<div class="address-box border-bot marginB-no">
+							<div class="address-name" style="text-align:center">
+								<p class="true_name name2">王二</p>
+								<span class="default" addressid="215">默认</span>
+							</div>
+							<div class="address-describe address-describe-list" style="width: 70%;">
+								<p class="phone1">手机：13752251670</p>
+								<p class="address-word">天津天津市河西区发动机撒了封疆大吏a</p>
+							</div>
+							<div class="jt-r2" style="right: 2rem;"><img src="img/address-edit.png" class="address-edit" addressid="215"></div>
+						</div>
+					</li>
+					<li class="liclass_215">
+						<div class="address-box border-bot marginB-no">
+							<div class="address-name" style="text-align:center">
+								<p class="true_name name2">张三</p>
+							</div>
+							<div class="address-describe address-describe-list" style="width: 70%;">
+								<p class="phone1">电话：13752251670</p>
+								<p class="address-word">天津天津市河西区发动机撒了封疆大吏a</p>
+							</div>
+							<div class="jt-r2" style="right: 2rem;"><img src="img/address-edit.png" class="address-edit" addressid="215"></div>
+						</div>
+					</li>
+					<li class="liclass_215">
+						<div class="address-box border-bot marginB-no">
+							<div class="address-name" style="text-align:center">
+								<p class="true_name name2">李四</p>
+							</div>
+							<div class="address-describe address-describe-list" style="width: 70%;">
+								<p class="phone1">电话：13752251670</p>
+								<p class="address-word">天津天津市河西区发动机撒了封疆大吏a</p>
+							</div>
+							<div class="jt-r2" style="right: 2rem;"><img src="img/address-edit.png" class="address-edit" addressid="215"></div>
+						</div>
+					</li>
+					<!--代购人收货地址-->
+					<li class="liclass_215">
+						<div class="address-box border-bot marginB-no">
+							<div class="address-name" style="text-align:center">
+								<p class="true_name name2">王二</p>
+							</div>
+							<div class="address-describe address-describe-list" style="width: 70%;">
+								<p class="phone1">手机：13752251670</p>
+								<p class="address-word_hide">卓越卡号：23124575</p>
+								<p class="address-word">天津天津市河西区发动机撒了封疆大吏a</p>
+							</div>
+							<div class="jt-r2" style="right: 2rem;"><img src="img/address-edit.png" class="address-edit" addressid="215"></div>
+						</div>
+					</li>
+					<li class="liclass_215">
+						<div class="address-box border-bot marginB-no">
+							<div class="address-name" style="text-align:center">
+								<p class="true_name name2">张三</p>
+							</div>
+							<div class="address-describe address-describe-list" style="width: 70%;">
+								<p class="phone1">电话：13752251670</p>
+								<p class="address-word_hide">卓越卡号：4523124575</p>
+								<p class="address-word">天津天津市河西区发动机撒了封疆大吏a</p>
+							</div>
+							<div class="jt-r2" style="right: 2rem;"><img src="img/address-edit.png" class="address-edit" addressid="215"></div>
+						</div>
+					</li>
+					<li class="liclass_215">
+						<div class="address-box border-bot marginB-no">
+							<div class="address-name" style="text-align:center">
+								<p class="true_name name2">李四</p>
+							</div>
+							<div class="address-describe address-describe-list" style="width: 70%;">
+								<p class="phone1">电话：13752251670</p>
+								<p class="address-word_hide">卓越卡号：2233124575</p>
+								<p class="address-word">天津天津市河西区发动机撒了封疆大吏a</p>
+							</div>
+							<div class="jt-r2" style="right: 2rem;"><img src="img/address-edit.png" class="address-edit" addressid="215"></div>
+						</div>
+					</li>
+					
+				</ul>
+				<div class="new-build foot-fixed foot-btn">新建</div>
+			</div>
+			<!--收货地址列表结束-->
+			<div class="img-center no-order" style="display:none">
+				<img src="img/module1.jpg" alt="" class="coupon-null-img">
+				<h4 class="coupon-tit">暂无商品</h4>
+			</div>
+			<!--收货地址编辑开始-->
+			<div class="address-edit-page">
+				<!--新建个人地址-->
+				<ul class="address-edit-ul">
+					<li><input type="text" placeholder="收件人姓名" class="input-com1" id="address-name"></li>
+					<li><input type="number" placeholder="手机号码" class="input-com1" id="address-phone"></li>
+					<li><input type="number" placeholder="区号" class="input-com1" id="address-tel" style=" width: 15%; "><span>|</span><input type="number" placeholder="固定电话" class="input-com1" id="address-tel" style=" width: 70%; margin-left: 5%; "></li>
+					<li class="posi1">
+						<select class="area1" id="province" name="province_id">
+							<option value="0">请选择省</option>
+						</select>
+						<img src="img/jt-r.png" class="area-choice">
+					</li>
+					<li class="posi1">
+						<select class="area1" id="city" name="city_id">
+							<option value="0">请选择市</option>
+						</select>
+						<img src="img/jt-r.png" class="area-choice">
+					</li>
+					<li><input type="text" placeholder="邮政编码" class="input-com1" id="address-yb" value=""></li>
+					<li><input type="text" placeholder="详细地址" class="input-com1" id="address-word" value=""></li>
+				</ul>
+				<!--新建代购人地址-->
+				<ul class="address-edit-ul">
+					<li><input type="text" placeholder="请输入代购人的卓越卡号" class="input-com1" id="address-name" style="width: 80%;"><a href="javascript:" class="integral-detailbtn radius3 input30">检验</a></li>
+					<li class="posi1">
+						<select class="area1" id="province" name="province_id">
+							<option value="0">请选择省</option>
+						</select>
+						<img src="img/jt-r.png" class="area-choice">
+					</li>
+					<li class="posi1">
+						<select class="area1" id="city" name="city_id">
+							<option value="0">请选择市</option>
+						</select>
+						<img src="img/jt-r.png" class="area-choice">
+					</li>
+					<li><input type="text" placeholder="详细地址" class="input-com1" id="address-word" value=""></li>
+					<li><input type="number" placeholder="手机号码" class="input-com1" id="address-phone"></li>
+				</ul>
+				<div class="address-default">
+					<div class="check-box address-check">
+						<input type="checkbox" class="input_check" checked="" id="default" name="is_default">
+						<label for=""></label>
+					</div>
+					<span class="remind4">设为默认地址</span>
+				</div>
+
+				<div class="address-foot foot-fixed foot-btn">
+					<span class="cancelbtn2 left">取消</span>
+					<span class="surebtn2 left">保存</span>
+				</div>
+			</div>
+			<!--收货地址编辑结束-->
+			<!--支付方式确认-->
+			<div class="order-detail none" id="sel_pay_sure" style="z-index: 999;height: 30%;position:fixed;bottom:-1.5rem;">
+				<ul class="order-ul" style="line-height:initial;">
+					<li>
+						<p class="left"><img src="img/zhifubao.png" style="height: 3rem; margin-top: 0.5rem;"></p>
+						<div class="check-box right" style="margin: 1rem">
+							<input type="checkbox" class="input_check" id="checked1"><label for="checked1"></label>
+						</div>
+					</li>
+					<li>
+						<p class="left"><img src="img/zhifuimg2.png" style="height: 3rem;margin-top: 0.5rem;"></p>
+						<div class="check-box right" style="margin: 1rem">
+							<input type="checkbox" class="input_check" id="checked1"><label for="checked1"></label>
+						</div>
+					</li>
+					<li>
+						<p class="left"><img src="img/timg.jpg" style="height: 3rem; margin-top: 0.5rem;"></p>
+						<div class="check-box right" style="margin: 1rem">
+							<input type="checkbox" class="input_check" id="checked1"><label for="checked1"></label>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--支付方式确认结束-->
+
+		</div>
+		<div style="display:none;" class="gotobtn" id="goTopBtn"><img border="0" src="img/goToTop.png"></div>
+		<div class="cover"></div>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/tmpl/address.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var flag = getUrlParam('flag');
+				if(flag == 1) {
+					$(".gmfs").find("li.selected").removeClass("selected");
+					$(".gmfs >li + li a").css("padding-top", "0");
+					$(".gmfs >li + li a .none").css("display", "block");
+					$(".gmfs >li + li").addClass("selected");
+				}
+			})
+		</script>
+		
+		<script type="text/javascript">
+			$(function(){
+				/* 点击展开地址列表 */
+				$('#order').on('click','#address',function(event){
+					$('.list').hide();
+					$('.address-choice').show();
+					$('#head_tit').html('地址管理');
+				});
+				/* 选中状态 */ 
+			    $('.content').on('click','.address-describe',function(){
+					$(this).parents('li').addClass('border-redleft').siblings().removeClass('border-redleft');
+				});
+				/*点击更换选中的发货地址*/
+				$('#order').on('click','.address-describe-list',function(event){
+					//$(this).parents('li').addClass('border-redleft').siblings().removeClass('border-redleft');
+					$('#h_name').html($(this).prev().html());
+					$('#address-describe').html($(this).html());
+					$('.list').show();
+					$('#head_tit').html($('title').text());
+					$('.address-choice').hide();
+					event.stopPropagation();
+					addressoff = true;
+					$('#payment').removeClass('bg');
+				});
+				//支付确认
+				$('#payment').on('click', function() {
+					window.location.href="select-pay.html"
+				});
+				$(document).on('click', '.cancelbtn3,.cover', function() {
+					$('#pay_sure').slideUp('fast');
+					$(".cover").css("display", "none");
+				});
+				//结束支付确认
+				//支付确认
+				$('#sel_pay').on('click', function() {
+					$('#sel_pay_sure').slideDown('fast');
+					$("#sel_pay_sure").css("display", "block")
+					$(".cover").css("display", "block");
+				});
+				$(document).on('click', '.cancelbtn3,.cover,#checked1', function() {
+					$('#sel_pay_sure').slideUp('fast',function(){
+						$(".cover").css("display", "none")
+					});
+					$('#pay_sure').slideUp('fast',function(){
+						$(".cover").css("display", "none")
+					});
+				});
+				
+				//结束支付确认
+				mBox();
+			})
+		
+		</script>
+	</body>
+
+</html>

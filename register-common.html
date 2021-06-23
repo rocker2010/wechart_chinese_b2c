@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>天狮大中华</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="header_has_nav">
+			<div class="header-box">
+				<div class="index-header goback-header"><img src="img/back.png" class="back-icon">
+					<h1 class="head-tit" id="head_tit">顾客注册</h1>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper" id="register">
+			<div class="content outer register">
+				<ul class="groupStep-list">
+					<li class="sel"><span class="groupStep-num"><i class="iconfont icon-huiyuan"></i></span></li>
+					<li><span class="groupStep-num"><i class="iconfont icon-rmb"></i></span></li>
+					<li><span class="groupStep-num"><i class="iconfont icon-shenfen"></i></span></li>
+				</ul>
+				<div class="register_info">
+					<ul>
+						<li><span class="bitian">*</span><strong>电子邮箱：</strong>（可以用于登录天狮大中华网站）<input type="text" name="member_mobile" class="input100"></li>
+						<li><span class="bitian">*</span><strong>昵称：</strong>（可以用于登录天狮大中华网站）<input type="text" name="true_name" class="input100" value="" placeholder="6-15位，字母开头，允许字母、数字、下划线"></li>
+						<li><span class="bitian">*</span><strong>性别：</strong>
+							<div class="button-holder">
+							<input type="radio" id="radio-1-1" name="radio-1-set" class="regular-radio" checked="" value="0"><label for="radio-1-1"></label><span class="radio-sex">男</span>
+							<input type="radio" id="radio-1-2" name="radio-1-set" class="regular-radio" value="1"><label for="radio-1-2"></label><span class="radio-sex">女</span>
+						</div>
+						</li>
+						<li><span class="bitian">*</span><strong>请设置您的登录密码：</strong><input type="password" name="true_name" class="input100" value="">
+							<p><span class="bitian">*</span><strong>再次输入您的登录密码：</strong><input type="password" name="true_name" class="input100" value=""></p>
+						</li>
+
+						<li><span class="bitian">*</span><strong>手机号：</strong>
+							<div><input type="text" name="true_name" class="input80" value="" style="width: 60%;margin-right: .5rem;">
+								<a href="javascript:" class="integral-detailbtn radius3 input30" id="yanzhengCode">获取验证码</a>
+							</div>
+							<p><span class="bitian">*</span><strong>手机验证码：</strong><input type="text" name="true_name" class="input100" value=""></p>
+						</li>
+						<li>
+							<div class="check-box tongyi-check">
+								<input type="checkbox" class="input_check" checked="">
+								<label for=""></label>
+							</div>我已经阅读并同意&nbsp;&nbsp;
+							<a href="about.html" class="red-font">网站用户注册协议</a>
+						</li>
+					</ul>
+					<a class="new-build foot-fixed foot-btn" href="javascript:" id="nextStp">注册</a>
+					<!--信息编辑结束-->
+				</div>
+				<div class="register_info register_info_on" id="register_info_on">
+					<ul>
+						<li>
+							<h3 class="warning">请再次确认您的信息</h3></li>
+						<li><b>电子邮箱：</b>123@1.com&nbsp;&nbsp;&nbsp;看得见付款</li>
+						<li><b>昵称：</b>房间打开</li>
+						<li><b>性别：</b>男</li>
+						<li><b>手机号：</b>13541247512</li>
+						<li class="warning">注意：电子邮箱和昵称，确认后，则不允许再修改，请谨慎操作！</li>
+					</ul>
+					<div class="address-foot foot-fixed foot-btn" id="button_div">
+						<span class="cancelbtn2 left">返回修改</span>
+						<span class="surebtn2 left">确认无误</span>
+					</div>
+				</div>
+			</div>
+			<div class="cover"></div>
+			<div style="display:none;" class="gotobtn" id="goTopBtn"><img border="0" src="img/goToTop.png"></div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/tmpl/register.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#nextStp').on('click', function() {
+					$(".register_info_on").css("display", "block")
+					$(".cover").css("display", "block");
+					$('.register_info_on').slideDown('fast');
+				});
+				$(document).on('click', '.cancelbtn2,.cover', function() {
+					$('.register_info_on').slideUp('fast');
+					$(".cover").css("display", "none");
+				});
+				$(document).on('click', '.surebtn2', function() {
+					window.location = "register-sucess.html";
+				});
+			})
+		</script>
+	</body>
+
+</html>

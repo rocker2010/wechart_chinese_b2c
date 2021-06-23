@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>天狮大中华</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="header">
+			<div class="header-box">
+				<div class="index-header goback-header"><img src="img/back.png" class="back-icon">
+					<h1 class="head-tit" id="head_tit">注册第二步：密码与支付</h1>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper" id="register">
+			<div class="content outer register">
+				<ul class="groupStep-list">
+					<li class="sel"><span class="groupStep-num"><i class="iconfont icon-huiyuan"></i></span></li>
+					<li class="sel"><span class="groupStep-num"><i class="iconfont icon-rmb"></i></span></li>
+					<li><span class="groupStep-num"><i class="iconfont icon-shenfen"></i></span></li>
+				</ul>
+				<div class="register_info">
+				<ul>
+					<li><span class="bitian">*</span><b>登录密码：</b>（此密码为天狮大中华网站登录密码）<div><input type="text" class="input80" placeholder="6-16位数字"></div></li>
+					<li><span class="bitian">*</span><b>再次输入：</b><input type="text"   class="input80" value="" placeholder="6-16位数字"></li>
+					<li><span class="bitian">*</span><b style="width: 60%;">卓越卡交易密码：</b><input type="text"   class="input80" value="" placeholder="6位数字"></li>
+					<li><span class="bitian">*</span><b style="width: 60%;">再次输入卓越卡交易密码：</b><input type="text"   class="input80" value="" placeholder="6位数字"></li>
+					<li>为了确保卓越卡账户的安全，请您勿向他人透露交易密码。如忘记该密码，需本人持身份证至公司或总部进行修改。（提示：输入123456，为无效密码） </li>
+					<li><h3>购买卓越卡（电子卡）</h3>
+					<p class="warning">此费用为天狮卓越卡（电子卡）办理费用，付款成功后，您将获得天狮卓越卡（电子卡）卡号，用于各项业务办理。
+					<span class="zhuoyuePrice">￥5.00</span>
+					</li>
+				</ul>
+				<a class="new-build foot-fixed foot-btn" href="register3.html">立即支付</a>
+				<!--信息编辑结束-->
+				</div>
+			</div>
+			<div class="cover"></div>
+			<div style="display:none;" class="gotobtn" id="goTopBtn"><img border="0" src="img/goToTop.png"></div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/iscroll.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/tmpl/register.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#nextStp').on('click', function() {
+					$(".register_info_on").css("display", "block")
+					$(".cover").css("display", "block");
+					$('.register_info_on').slideDown('fast');
+				});
+				$(document).on('click', '.cancelbtn2,.cover', function() {
+					$('.register_info_on').slideUp('fast');
+					$(".cover").css("display", "none");
+				});
+			})
+		</script>
+	</body>
+
+</html>

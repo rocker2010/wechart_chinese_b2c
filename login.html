@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="aplus-terminal" content="1">
+		<meta name="keywords" content="">
+		<meta name="discription" content="">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>天狮大中华</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/iconfont.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<style type="text/css">
+			.etabs {
+				margin: 0;
+				padding: 0 1.5rem;
+				border-bottom: 1px #ccc solid;
+				margin-top: 0.5rem;
+			}
+			
+			.tab {
+				display: inline-block;
+				zoom: 1;
+				background: #eee;
+				border: solid 1px #999;
+				padding: 2px;
+				border-bottom: none;
+				-moz-border-radius: 4px 4px 0 0;
+				-webkit-border-radius: 4px 4px 0 0;
+			}
+			
+			.tab a {
+				font-size: 14px;
+				line-height: 2em;
+				display: block;
+				padding: 0 10px;
+				outline: none;
+			}
+			
+			.tab a:hover {}
+			
+			.tab.active {
+				background: #fff;
+				position: relative;
+				top: 1px;
+				border-color: #AB2B2B;
+			}
+			
+			.tab a.active {
+				font-weight: bold;
+				color: #AB2B2B;
+			}
+			
+			.tab-container .panel-container {
+				background: #fff;
+				border: solid #666 1px;
+				padding: 10px;
+				-moz-border-radius: 0 4px 4px 4px;
+				-webkit-border-radius: 0 4px 4px 4px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="content1">
+				<div id="tab-container" class="tab-container">
+					<img class="sign-img1" src="img/login.jpg">
+					<ul class='etabs'>
+						<li class='tab'>
+							<a href="#tabs1">卓越卡会员登录</a>
+						</li>
+						<li class='tab'>
+							<a href="#tabs2">普通会员登录</a>
+						</li>
+					</ul>
+					<div id="tabs1">
+						<div class="signbox">
+							<div class="signIn-box account">
+								<img src="img/accunt.png" class="sign-icon">
+								<input type="text" placeholder="请输入卓越卡号或身份证号" id="sign-phone" class="sign-inp phone">
+								<span class="dele"></span>
+							</div>
+							<div class="signIn-box passW">
+								<img src="img/pwd.png" class="sign-icon">
+								<input type="password" placeholder="请输入密码" id="sign-pword" class="sign-inp pword">
+							</div>
+							<div class="signIn-box passW">
+								<img src="img/pwd2.png" class="sign-icon">
+								<input type="text" placeholder="请输入验证码" id="sign-yanzheng" class="sign-inp yanzheng">
+								<div class="erweima">
+									<img src="img/20170411104908.jpg" />
+									<a href="#">看不清</a>
+								</div>
+							</div>
+							<div class="sign-btn1">
+								<input type="button" value="登录" class="signbtn radius5" id="sign-btn1">
+								<div class="forget-box">
+									<p class="right">
+										<a href="register-info.html" class="register">注册账号</a>
+									</p>
+									<p class="left">
+										<a href="javascript:" class="register" onclick="alertphone()">找回密码</a>
+									</p>
+								</div>
+
+							</div>
+							<!--<div class="weixin-login">
+						<span class="other-remind">其他登录方式</span>
+						<div id="towxlogin">
+							<span class="wx-img" id="wxlogin" style="display:none"></span>
+							<span class="dx-img" id="tomlogin" style=""></span>
+							<p class="wx-word">微信登录</p>
+						</div>
+					</div>-->
+						</div>
+						<!-- content -->
+					</div>
+					<div id="tabs2">
+						<div class="signbox">
+							<div class="signIn-box account">
+								<img src="img/accunt.png" class="sign-icon">
+								<input type="text" placeholder="请输入注册邮箱或昵称或手机号 " id="sign-phone" class="sign-inp phone">
+								<span class="dele"></span>
+							</div>
+							<div class="signIn-box passW">
+								<img src="img/pwd.png" class="sign-icon">
+								<input type="password" placeholder="请输入密码" id="sign-pword" class="sign-inp pword">
+							</div>
+							<div class="signIn-box passW">
+								<img src="img/pwd2.png" class="sign-icon">
+								<input type="text" placeholder="请输入验证码" id="sign-yanzheng" class="sign-inp yanzheng">
+								<div class="erweima">
+									<img src="img/20170411104908.jpg" />
+									<a href="#">看不清</a>
+								</div>
+							</div>
+							<div class="sign-btn1">
+								<input type="button" value="登录" class="signbtn radius5" id="sign-btn1">
+								<div class="forget-box">
+									<p class="right">
+										<a href="register-info.html" class="register">注册账号</a>
+									</p>
+									<p class="left">
+										<a href="passwd-find.html" class="register">找回密码</a>
+									</p>
+								</div>
+
+							</div>
+							<!--<div class="weixin-login">
+						<span class="other-remind">其他登录方式</span>
+						<div id="towxlogin">
+							<span class="wx-img" id="wxlogin" style="display:none"></span>
+							<span class="dx-img" id="tomlogin" style=""></span>
+							<p class="wx-word">微信登录</p>
+						</div>
+					</div>-->
+						</div>
+						<!-- content -->
+					</div>
+				</div>
+				<div class="alertbox show-phone none">
+					<p class="alert-p" style="padding-top: 40px;line-height: 1;">请联系客服电话</p>
+					<p class="alert-p phonetext" style="line-height: 4;margin-bottom: 10px;">暂无联系电话</p>
+					<div class="btnbox1">
+						<span class="sure-phone" style="width: 100%;">确定</span>
+					</div>
+				</div>
+			</div>
+			<div style="display:none;" class="gotobtn" id="goTopBtn"><img border="0" src="img/goToTop.png"></div>
+			<div class="cover" style="display:none;"></div>
+		</div>
+		<script src="js/tmpl/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.easytabs.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(document).on('click', '.send-out-bg', function() {
+					window.location = "index.html";
+				});
+				$('#tab-container').easytabs();
+				$('.sure-phone').bind('click', function() {
+					$('.cover').css('display', 'none');
+					$('.show-phone').css('display', 'none');
+				})
+			})
+
+			function alertphone() {
+				$('.cover').css('display', 'block');
+				$('.show-phone').css('display', 'block');
+			}
+		</script>
+	</body>
+
+</html>
